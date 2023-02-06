@@ -21,7 +21,7 @@ nav.bodyone{
 }
 .info-placeholder {
   background-color: rgba(51, 51, 51, 0);
-  color: #FFF;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +66,90 @@ nav.bodyone{
   justify-content: center;
   align-items: center;
 }
+#horizon{
+  display: flex;
+  width: 85%;
+  color: black;
+  margin: 20px auto;
+}
+#horizon img{
+  width: 750px;
+}
+#horizon div{
+  text-align: left;
+  margin-left: 20px;
+}
+.intro p{
+  font-size: 26px;
+  font-weight: bold;
+}
+.pro_tit{
+  font-family: Futura, 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+  color: #063f5c;
+  margin: 30px auto;
+}
+
+.pro_tit::before {
+  content: "";
+  position: absolute;
+  background-color: #87fcc4;
+  width: 50%;
+  height: 32px;
+  z-index: -2;
+  top: 10%;
+  right: 560px;
+  border-radius: 50px;
+}
+
+.pro_tit::after {
+  content: "";
+  position: absolute;
+  background-color: #B3CCE6/*#f0daff*/;
+  width: 50%;
+  height: 32px;
+  z-index: -2;
+  top: 58%;
+  right: 300px;
+  border-radius: 50px;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 4rem 0;
+}
+.project {
+  width: calc(33.33% - 2rem);
+  background-color: #FFF;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  text-align: center;
+  margin: 1rem;
+  border-radius: 6px;
+}
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.project h3 {
+  font-size: 1.5rem;
+  margin: 2rem 0;
+}
+
+.project:hover{
+  background-color: rgb(194, 221, 224);
+  transform: scale(1.1);
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
 #horizon{
   display: flex;
   width: 85%;
